@@ -28,7 +28,7 @@ fn start_game() -> Status {
     Status::Ok
 }
 
-#[post("/start", format = "json")]
+#[post("/end", format = "json")]
 fn end_game() -> Status {
     info!("Game complete");
     Status::Ok
